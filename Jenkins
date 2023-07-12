@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Chekout') {
             steps {
-                echo 'Hello World'
+                git branch: `master`,ur: `https://github.com/shovonkhan200h/Coffe-shop.git`
             }
         }
     }
