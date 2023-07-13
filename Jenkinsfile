@@ -1,10 +1,21 @@
+// pipeline {
+//     agent any
+
+//     stages {
+//         stage('Checkout') {
+//             steps {
+//                 git url:'https://github.com/shovonkhan200h/Coffe-shop.git'
+//             }
+//         }
+//     }
+// }
 pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Hello') {
             steps {
-                git url:'https://github.com/shovonkhan200h/Coffe-shop.git'
+                echo 'Hello World'
             }
         }
     }
