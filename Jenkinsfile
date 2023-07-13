@@ -2,8 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Hello') {
             steps {
-                git branch: 'master', url: 'https://github.com/shovonkhan200h/Coffe-shop.git'
+                echo 'Hello World'
             }
         }
+    }
+}
